@@ -1,0 +1,179 @@
+.RenderCell {
+  margin: 40px 0;
+}
+
+.Card__Modal {
+  width: auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.CardModal__image {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf8ff;
+  border-radius: 8px;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.CardModal__image img {
+  width: 100%;
+  max-height: 390px;
+  transition: 0.3s ease-in-out;
+  border-radius: 16px;
+}
+
+.CardModalMobile__image {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf8ff;
+  border-radius: 8px;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.CardModalMobile__image img {
+  width: 100%;
+  max-height: 390px;
+  transition: 0.3s ease-in-out;
+  border-radius: 16px;
+}
+.CardModalMobile__image {
+  display: none;
+}
+.CardModal__box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.CardModalBoxTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.CardModal__box h1 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.CardModal__box p {
+  font-weight: 300;
+  font-size: 16px;
+}
+.CardModalBoxTop h2 {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: right;
+  margin: 10px 0;
+}
+.CardModalBoxTop .CardModalBoxBtn {
+  padding: 20px 0;
+  border: none;
+  opacity: 0.7;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+.CardModalBoxTop .CardModalBoxBtn:hover {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.CardModalBoxTop .one {
+  background-color: #c5d940;
+}
+.CardModalBoxTop .two {
+  background-color: #fffb78;
+}
+@media only screen and (max-width: 950px) {
+  /* .ModalLayout {
+    width: 100%;
+    height: 100vh;
+  } */
+  .Card__Modal {
+    width: 100%;
+    height: 100%;
+  }
+  .CardModal__image {
+    width: 250px;
+    height: 250px;
+  }
+  .CardModal__image img {
+    max-height: 240px;
+    width: 240px;
+  }
+  .CardModal__box {
+    width: 250px;
+    height: 250px;
+  }
+  .CardModal__box h1 {
+    font-size: 20px;
+  }
+  .CardModal__box p {
+    font-size: 14px;
+  }
+  .CardModalBoxTop h2 {
+    font-size: 24px;
+  }
+  .CardModalBoxTop .CardModalBoxBtn {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .Card__Modal {
+    height: 400px;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .CardModal__image {
+    display: none;
+  }
+  .CardModalMobile__image {
+    width: 200px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .CardModalMobile__image img {
+    max-height: 185px;
+    width: 185px;
+  }
+
+  .CardModal__box {
+    height: 200px;
+    width: 200px;
+    padding: 0;
+  }
+  .CardModal__box h1 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .CardModal__box p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .CardModalBoxTop h2 {
+    font-size: 20px;
+  }
+  .CardModalBoxTop .CardModalBoxBtn {
+    padding: 14px 0;
+    font-size: 14px;
+  }
+}

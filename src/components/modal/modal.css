@@ -1,0 +1,30 @@
+.Modal {
+  width: 100%;
+  height: 100vh;
+  background-color: #00000020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.Modal.sticky {
+  display: flex;
+}
+.ModalLayout {
+  padding: 10px 30px;
+  background-color: #fff;
+}
+.ModalClosing {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ModalClosing .icon {
+  color: red;
+  cursor: pointer;
+  font-size: 22px;
+}
