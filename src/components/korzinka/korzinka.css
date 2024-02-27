@@ -1,0 +1,258 @@
+.Korzinka {
+  width: 800px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  transition: 0.4s ease-in-out;
+  background-color: white;
+  z-index: 50;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: #f7f7f8;
+}
+.Korzinka__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 0 40px;
+  font-family: "Kdam Thmor Pro";
+  background-color: #fff;
+}
+.Korzinka__header h4 {
+  font-size: 28px;
+  text-transform: lowercase;
+  letter-spacing: -0.2px;
+}
+.Korzinka__header .icon {
+  font-size: 30px;
+  color: chocolate;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.Korzinka.sticky {
+  right: 0;
+}
+.korzinka__body {
+  padding: 40px 10px;
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.korzinka__products {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 460px;
+  overflow-y: auto;
+}
+.korzika__product {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.korzinkaProduct__image {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf8ff;
+  border-radius: 8px;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.korzinkaProduct__image img {
+  width: 100%;
+  max-height: 90px;
+  transition: 0.3s ease-in-out;
+  border-radius: 4px;
+}
+.korzika__product h2 {
+  font-weight: 300;
+  font-size: 22px;
+}
+.korzinkaProduct__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.korzinka__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fffb91;
+  border-radius: 20px;
+}
+.korzinka__control p {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.korzinka__control .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffa62;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.korzinka__control .icon:hover {
+  transform: scale(1.2);
+}
+.korzinka__control .icon:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+.korzinka__control .icon:last-child {
+  border-radius: 0 20px 20px 0;
+}
+.korzinka__oformit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 40px; */
+}
+.korzinka__oformit h3 {
+  font-weight: 400;
+  font-size: 27px;
+}
+.korzinka__oformit button {
+  background-color: #fffb93;
+  height: 60px;
+  width: 260px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+.korzinka__oformit button:hover {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.korzinka__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+  height: calc(100% - 100px);
+  flex-direction: column;
+}
+.korzinka__empty img {
+  height: 300px;
+}
+.korzinka__empty p {
+  font-size: 20px;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1000px) {
+  .Korzinka {
+    width: 100%;
+  }
+  .korzinka__body {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .korzinka__body {
+    padding: 30px;
+  }
+  .korzinkaProduct__image {
+    width: 60px;
+    height: 60px;
+  }
+  .korzinkaProduct__image img {
+    width: 52px;
+    max-height: 52px;
+  }
+  .korzika__product h2 {
+    font-size: 16px;
+  }
+  .korzinka__control p {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .korzinka__control .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .korzinka__oformit h3 {
+    font-size: 20px;
+  }
+  .korzinka__empty img {
+    height: 120px;
+  }
+  .korzinka__empty p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .korzinka__body {
+    padding: 16px;
+  }
+  .korzinkaProduct__image {
+    width: 40px;
+    height: 40px;
+  }
+  .korzinkaProduct__image img {
+    width: 36px;
+    max-height: 36px;
+  }
+  .korzika__product h2 {
+    font-size: 12px;
+  }
+  .korzinka__control p {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+  .korzinka__control .icon {
+    width: 24px;
+    height: 24px;
+    font-size: 8px;
+  }
+  .korzika__product {
+    padding: 10px;
+  }
+  .korzinka__oformit h3 {
+    font-size: 14px;
+  }
+  .korzinka__oformit button {
+    height: 45px;
+    width: 180px;
+    font-size: 11px;
+  }
+  .korzinka__oformit {
+    padding: 5px 0px;
+  }
+  .korzinka__image {
+    height: 40px;
+  }
+}
