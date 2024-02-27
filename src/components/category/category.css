@@ -1,0 +1,12 @@
+.Category {
+  margin: 20px 0;
+}
+.category_title {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  color: #1e1b26;
+  margin: 52px 0;
+}
