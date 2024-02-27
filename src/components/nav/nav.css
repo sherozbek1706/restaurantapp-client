@@ -1,0 +1,47 @@
+.container.navback {
+  background-color: #f7f7f8;
+}
+.Nav {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NavList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.Nav__elem {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  color: #000;
+}
+.Nav__elem:hover {
+  cursor: pointer;
+  background-color: #ffff00;
+  opacity: 1;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.Nav__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+  .Nav__elem {
+    font-size: 14px;
+  }
+}
