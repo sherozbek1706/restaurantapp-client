@@ -1,0 +1,139 @@
+.container.headershadow {
+  position: fixed;
+  z-index: 20 !important;
+  background: #ffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Header {
+  padding: 10px 0;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  background-color: #fff;
+}
+.Header__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+.Header__right img {
+  height: 60px;
+}
+.Header__right p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.Header__logo img {
+  height: 70px;
+  transform: scale(1.1);
+}
+.Header__left {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.HeaderLogo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.HeaderLogo h5 {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  font-family: "Kdam Thmor Pro";
+}
+.HeaderLogo p {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.HeaderSecond {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.HeaderSecond h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.HeaderSecond p {
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.HeaderPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.HeaderPhone__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.HeaderPhone__text h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.HeaderPhone__text p {
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.korzinka__image {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+  .Header__right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .HeaderSecond {
+    display: none;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .HeaderPhone {
+    display: none;
+  }
+  .Header__logo img {
+    height: 55px;
+  }
+  .HeaderLogo h5 {
+    font-size: 21px;
+  }
+  .HeaderLogo p {
+    font-size: 10px;
+  }
+  .korzinka__image {
+    height: 60px;
+  }
+}
