@@ -35,10 +35,7 @@
   .maxwidth {
     max-width: 420px;
   }
-}
-
-@media only screen and (max-width: 450px) {
-  .maxwidth {
-    max-width: 260px;
+  .container {
+    padding: 0 10px;
   }
 }

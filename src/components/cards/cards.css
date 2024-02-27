@@ -123,34 +123,39 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .Cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .Card {
-    width: 120px;
+    width: 300px;
   }
   .cardbox__price p {
-    font-size: 10px;
-    margin-left: 10px;
+    font-size: 16px;
+    margin-left: 20px;
   }
   .cardbox__price img {
-    width: 28px;
+    width: 40px;
   }
   .cardbox__description p {
-    width: 120px;
-    font-size: 10px;
+    width: 300px;
+    font-size: 16px;
   }
   .card__img {
-    width: 120px;
-    height: 120px;
+    width: 300px;
+    height: 300px;
   }
   .card__img img {
-    max-height: 110px;
-    width: 110px;
+    max-height: 300px;
+    width: 300px;
   }
   .card__box h4 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
   }
   .category_title {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 20px 0;
   }
 }
