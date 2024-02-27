@@ -157,5 +157,15 @@
   .category_title {
     font-size: 18px;
     margin: 20px 0;
+    background-color: #fffb9396;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    box-shadow: rgba(0, 0, 0, 0.021) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
+    margin-bottom: 40px;
   }
 }
